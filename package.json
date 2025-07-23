@@ -2,7 +2,7 @@
   "name": "express_backend",
   "version": "1.0.0",
   "description": "backend for dashboard ",
-  "main": "index.js",
+  "main": "src/index.js",
   "type": "module",
   "scripts": {
     "start": "node -r dotenv/config --experimental-json-modules src/index.js",
