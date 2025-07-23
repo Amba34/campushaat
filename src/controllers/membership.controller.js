@@ -5,7 +5,6 @@ import { ApiError } from '../utils/ApiError.js';
 import * as membershipQueries from '../quries/membership.js';
 
 export const getTotalMembershipsByValue = asyncHandler(async (req, res) => {
-  console.log(membershipQueries)
   try {
     const [rows] = await db.query(membershipQueries.totalMembershipsByValue);
     res.status(200).json(new ApiResponse(true, 'Total memberships by value fetched', 200, rows));
