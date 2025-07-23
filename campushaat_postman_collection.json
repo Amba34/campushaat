@@ -1,0 +1,60 @@
+{
+    "info": {
+      "name": "CampusHaat API",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+      "version": "1.0.0"
+    },
+    "item": [
+      {
+        "name": "Orders",
+        "item": [
+          { "name": "By Year", "request": { "method": "GET", "header": [], "url": { "raw": "{{base_url}}/api/orders/by-year", "host": ["{{base_url}}"], "path": ["api", "orders", "by-year"] } } },
+          { "name": "By Month", "request": { "method": "GET", "header": [], "url": { "raw": "{{base_url}}/api/orders/by-month", "host": ["{{base_url}}"], "path": ["api", "orders", "by-month"] } } },
+          { "name": "Created By Hour", "request": { "method": "GET", "header": [], "url": { "raw": "{{base_url}}/api/orders/created-by-hour", "host": ["{{base_url}}"], "path": ["api", "orders", "created-by-hour"] } } },
+          { "name": "Delivered By Hour", "request": { "method": "GET", "header": [], "url": { "raw": "{{base_url}}/api/orders/delivered-by-hour", "host": ["{{base_url}}"], "path": ["api", "orders", "delivered-by-hour"] } } },
+          { "name": "Avg Create To Pickup", "request": { "method": "GET", "header": [], "url": { "raw": "{{base_url}}/api/orders/avg-create-to-pickup", "host": ["{{base_url}}"], "path": ["api", "orders", "avg-create-to-pickup"] } } },
+          { "name": "Avg Pickup To Dispatch", "request": { "method": "GET", "header": [], "url": { "raw": "{{base_url}}/api/orders/avg-pickup-to-dispatch", "host": ["{{base_url}}"], "path": ["api", "orders", "avg-pickup-to-dispatch"] } } },
+          { "name": "Avg Dispatch To Delivery", "request": { "method": "GET", "header": [], "url": { "raw": "{{base_url}}/api/orders/avg-dispatch-to-delivery", "host": ["{{base_url}}"], "path": ["api", "orders", "avg-dispatch-to-delivery"] } } },
+          { "name": "Avg Create To Delivery", "request": { "method": "GET", "header": [], "url": { "raw": "{{base_url}}/api/orders/avg-create-to-delivery", "host": ["{{base_url}}"], "path": ["api", "orders", "avg-create-to-delivery"] } } },
+          { "name": "Late Pickups", "request": { "method": "GET", "header": [], "url": { "raw": "{{base_url}}/api/orders/late-pickups", "host": ["{{base_url}}"], "path": ["api", "orders", "late-pickups"] } } }
+        ]
+      },
+      {
+        "name": "Membership",
+        "item": [
+          { "name": "Total Memberships By Value", "request": { "method": "GET", "url": { "raw": "{{base_url}}/api/membership/total-memberships-by-value", "host": ["{{base_url}}"], "path": ["api", "membership", "total-memberships-by-value"] } } },
+          { "name": "Memberships & Value Per Month", "request": { "method": "GET", "url": { "raw": "{{base_url}}/api/membership/total-memberships-and-value-per-month", "host": ["{{base_url}}"], "path": ["api", "membership", "total-memberships-and-value-per-month"] } } },
+          { "name": "Total Membership Value", "request": { "method": "GET", "url": { "raw": "{{base_url}}/api/membership/total-membership-value", "host": ["{{base_url}}"], "path": ["api", "membership", "total-membership-value"] } } },
+          { "name": "Non-Member Payment", "request": { "method": "GET", "url": { "raw": "{{base_url}}/api/membership/total-non-member-payment", "host": ["{{base_url}}"], "path": ["api", "membership", "total-non-member-payment"] } } },
+          { "name": "Payment Stats By Mode", "request": { "method": "GET", "url": { "raw": "{{base_url}}/api/membership/payment-stats-by-mode", "host": ["{{base_url}}"], "path": ["api", "membership", "payment-stats-by-mode"] } } }
+        ]
+      },
+      {
+        "name": "Category and Product Insights",
+        "item": [
+          { "name": "Order By Year", "request": { "method": "GET", "url": { "raw": "{{base_url}}/api/category-and-product-insights/order-by-year", "host": ["{{base_url}}"], "path": ["api", "category-and-product-insights", "order-by-year"] } } },
+          { "name": "Products With Highest Prep Time", "request": { "method": "GET", "url": { "raw": "{{base_url}}/api/category-and-product-insights/products-with-highest-prep-time", "host": ["{{base_url}}"], "path": ["api", "category-and-product-insights", "products-with-highest-prep-time"] } } },
+          { "name": "Campus-Wise Monthly Revenue", "request": { "method": "GET", "url": { "raw": "{{base_url}}/api/category-and-product-insights/campus-wise-monthly-revenue", "host": ["{{base_url}}"], "path": ["api", "category-and-product-insights", "campus-wise-monthly-revenue"] } } },
+          { "name": "Most Ordered Products in Each Category", "request": { "method": "GET", "url": { "raw": "{{base_url}}/api/category-and-product-insights/most-ordered-products-in-each-category", "host": ["{{base_url}}"], "path": ["api", "category-and-product-insights", "most-ordered-products-in-each-category"] } } }
+        ]
+      },
+      {
+        "name": "Sales and Order Trends",
+        "item": [
+          { "name": "Total Orders Per Month", "request": { "method": "GET", "url": { "raw": "{{base_url}}/api/sales-and-order-trends/total-orders-per-month", "host": ["{{base_url}}"], "path": ["api", "sales-and-order-trends", "total-orders-per-month"] } } },
+          { "name": "Total Revenue Per Month", "request": { "method": "GET", "url": { "raw": "{{base_url}}/api/sales-and-order-trends/total-revenue-per-month", "host": ["{{base_url}}"], "path": ["api", "sales-and-order-trends", "total-revenue-per-month"] } } },
+          { "name": "Average Order Value Per Buyer", "request": { "method": "GET", "url": { "raw": "{{base_url}}/api/sales-and-order-trends/average-order-value-per-buyer", "host": ["{{base_url}}"], "path": ["api", "sales-and-order-trends", "average-order-value-per-buyer"] } } },
+          { "name": "Top 10 Selling Products By Quantity", "request": { "method": "GET", "url": { "raw": "{{base_url}}/api/sales-and-order-trends/top-10-selling-products-by-quantity", "host": ["{{base_url}}"], "path": ["api", "sales-and-order-trends", "top-10-selling-products-by-quantity"] } } },
+          { "name": "High Value Buyers", "request": { "method": "GET", "url": { "raw": "{{base_url}}/api/sales-and-order-trends/high-value-buyers", "host": ["{{base_url}}"], "path": ["api", "sales-and-order-trends", "high-value-buyers"] } } }
+        ]
+      },
+      {
+        "name": "Customer Behaviour",
+        "item": [
+          { "name": "Repeat vs One-time Buyers", "request": { "method": "GET", "url": { "raw": "{{base_url}}/api/customer-behaviour/repeat-vs-one-time-buyers", "host": ["{{base_url}}"], "path": ["api", "customer-behaviour", "repeat-vs-one-time-buyers"] } } },
+          { "name": "Repeat Buyers Favorite Categories", "request": { "method": "GET", "url": { "raw": "{{base_url}}/api/customer-behaviour/repeat-buyers-favorite-categories", "host": ["{{base_url}}"], "path": ["api", "customer-behaviour", "repeat-buyers-favorite-categories"] } } }
+        ]
+      }
+    ]
+  }
+  

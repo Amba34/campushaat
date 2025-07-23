@@ -1,5 +1,6 @@
-import mysql from "mysql2";
+import '../config.js';   
 
+import mysql from "mysql2";
 
 const pool = mysql.createPool({
     host: process.env.DB_HOST,
@@ -8,7 +9,6 @@ const pool = mysql.createPool({
     database: process.env.DB_NAME,
     port: process.env.DB_PORT,
 });
-
 
 const db = pool.promise();
 

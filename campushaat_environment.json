@@ -1,0 +1,13 @@
+{
+    "name": "CampusHaat Local",
+    "values": [
+      {
+        "key": "base_url",
+        "value": "http://localhost:8080",
+        "enabled": true
+      }
+    ],
+    "type": "environment",
+    "schema": "https://schema.getpostman.com/json/environment/v2.1.0/environment.json"
+  }
+  

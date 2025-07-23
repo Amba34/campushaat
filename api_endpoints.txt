@@ -1,0 +1,36 @@
+# API Endpoints
+
+## Orders (/api)
+GET /api/orders/by-year
+GET /api/orders/by-month
+GET /api/orders/created-by-hour
+GET /api/orders/delivered-by-hour
+GET /api/orders/avg-create-to-pickup
+GET /api/orders/avg-pickup-to-dispatch
+GET /api/orders/avg-dispatch-to-delivery
+GET /api/orders/avg-create-to-delivery
+GET /api/orders/late-pickups
+
+## Membership (/api/membership)
+GET /api/membership/total-memberships-by-value
+GET /api/membership/total-memberships-and-value-per-month
+GET /api/membership/total-membership-value
+GET /api/membership/total-non-member-payment
+GET /api/membership/payment-stats-by-mode
+
+## Category and Product Insights (/api/category-and-product-insights)
+GET /api/category-and-product-insights/order-by-year
+GET /api/category-and-product-insights/products-with-highest-prep-time
+GET /api/category-and-product-insights/campus-wise-monthly-revenue
+GET /api/category-and-product-insights/most-ordered-products-in-each-category
+
+## Sales and Order Trends (/api/sales-and-order-trends)
+GET /api/sales-and-order-trends/total-orders-per-month
+GET /api/sales-and-order-trends/total-revenue-per-month
+GET /api/sales-and-order-trends/average-order-value-per-buyer
+GET /api/sales-and-order-trends/top-10-selling-products-by-quantity
+GET /api/sales-and-order-trends/high-value-buyers
+
+## Customer Behaviour (/api/customer-behaviour)
+GET /api/customer-behaviour/repeat-vs-one-time-buyers
+GET /api/customer-behaviour/repeat-buyers-favorite-categories 
